@@ -18,6 +18,7 @@ dependencies {
     implementation("io.vavr:vavr-kotlin:0.10.2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.+")
 
+    compileOnly("com.zaxxer:HikariCP:3.4.5")
     compileOnly(files("C:/Users/opel3/Desktop/Depends/PaperSpigot-1.8.8-R0.1-SNAPSHOT-latest.jar"))
 }
 
