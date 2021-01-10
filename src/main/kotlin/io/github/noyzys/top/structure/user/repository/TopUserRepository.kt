@@ -6,7 +6,6 @@ import io.vavr.control.Option
 import io.vavr.kotlin.option
 import org.bukkit.entity.Player
 import java.util.*
-import kotlin.collections.HashMap
 
 /**
  * @author: noyzys on 17:28, 10.01.2021
@@ -15,7 +14,7 @@ class TopUserRepository(
     private val topPlugin: TopPlugin,
 ) {
 
-    private val topUsers = HashMap<UUID, TopUser>()
+    private val topUsers = hashMapOf<UUID, TopUser>()
 
     fun addUser(topUser: TopUser) {
         topUsers[topUser.uniqueId] = topUser
